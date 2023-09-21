@@ -1,5 +1,24 @@
-﻿Сборка начата…
-1>------ Сборка начата: проект: ConsoleApp8, Конфигурация: Debug Any CPU ------
-1>  ConsoleApp8 -> C:\Users\Артем\OneDrive\Рабочий стол\дз\ConsoleApp8\ConsoleApp8\bin\Debug\ConsoleApp8.exe
-========== Сборка: успешно выполнено — 1 , со сбоем — 0, в актуальном состоянии — 0, пропущено — 0 ==========
-========== Сборка запущено в 21:51, заняло 00,695 с ==========
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {   double a=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Первая координата центра -"+a);
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Первая координата центра -"+ b);
+            double R = Convert.ToDouble(Console.ReadLine());
+            double G = Math.Pow(R, 2);
+            Console.WriteLine("Радиус окружности - " + R);
+            Console.WriteLine($"Уравнение окружности - (x-{a})^2+(y-{b})^2={G}");
+            Console.ReadKey();
+        }
+    }
+}
+
